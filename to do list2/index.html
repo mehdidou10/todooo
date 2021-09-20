@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO LIST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="nav-todo">
+    <span class="title">Our keep</span>
+    <div onClick="showPopup()" class="nav-todo-add-btn">
+        <span>+</span>
+    </div>
+</div>
+
+<div class="list-cards">
+    <div id="notes" class="list-cards-container">
+          <div class="card">
+               <div class="card-head">
+                 <span > titre note</span>
+                 <img onClick="deteleNote(this)" src="image/delete.png">
+               </div>
+               <div class="card-content">
+                   <span>
+                       Lorem ipsum dolor, sit amet consectetur  esse!
+                       </span>
+               </div>
+            </div>          
+    </div>
+</div>
+
+<div id="popup" class="popup-container">
+   
+    <div class="popup">
+        <span class="popup-title">Add new note</span>
+        <input id="input" placeholder="Your note title">
+        <textarea id="textarea" rows="10"></textarea>
+       
+        <div class="actions">
+            <div onclick="creatNote()" class="create">
+                <span>Create</span>
+            </div>
+            <div onclick="closePopup()" class="cancel">
+                <span>Cancel</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
